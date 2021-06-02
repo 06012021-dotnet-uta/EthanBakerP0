@@ -19,7 +19,7 @@ namespace RockPaperScissors1
             int playerChoiceInt;
             int playAgainInt;
 
-            //loop to replay or exit
+            //loop to replay match or exit
             do{
                 int playerWins = 0;
                 int computerWins = 0;
@@ -54,7 +54,7 @@ namespace RockPaperScissors1
                     Random rand = new Random();
                     int computerChoice = rand.Next(1, 4);
                     
-                    //displays choices
+                    //displays choices made
                     Console.WriteLine($"{playerName}: {(RpsChoice)playerChoiceInt}");
                     Console.WriteLine($"Computer: {(RpsChoice)computerChoice}");
                 
@@ -74,13 +74,13 @@ namespace RockPaperScissors1
                     ++roundNumber;
                 };
 
-
-                    if(playerWins == 2){ 
-                        Console.WriteLine($"{playerName} wins the match!!");
-                    }
-                    else if (computerWins == 2){
-                        Console.WriteLine($"The computer wins the match!!");
-                    };
+                //display winner
+                if(playerWins == 2){ 
+                    Console.WriteLine($"{playerName} wins the match!!");
+                }
+                else if (computerWins == 2){
+                    Console.WriteLine($"The computer wins the match!!");
+                };
 
                     //ask player if they want to play agian
                 do{ Console.WriteLine($"Do you want to play again? (type number):\n 1) Yes\n 2) No");
