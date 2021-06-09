@@ -1,0 +1,7 @@
+namespace EventHandlerDemo
+{
+    class EventHandlerClass
+    {
+        
+    }
+}
