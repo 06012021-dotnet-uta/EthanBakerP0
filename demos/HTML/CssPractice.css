@@ -1,0 +1,71 @@
+.cssdemo{
+  width: 150;
+  border-style: solid;
+  border-color:navy;
+  border-width: 100px 25px;
+
+}
+
+div{
+  background-color:rgb(60, 190, 116);
+  width: 200;
+}
+
+.class1, .class2{
+  border: 15px dotted steelblue;
+  width: 100;
+}
+
+#id1{
+  color: fuchsia;
+  display: inherit;
+}
+
+.class3:active{
+  color:grey;
+  background-color: goldenrod;
+}
+
+body{
+  background-color: rgb(98, 195, 219);
+  cursor: crosshair;
+}
+
+.class4:hover{
+  color:white;
+  background-color:darkmagenta;
+  width: 100px;;
+}
+
+a:visited{
+  color: aliceblue;
+}
+
+div sub{
+  font-style: italic;
+}
+
+.class5::first-letter{
+  font-size:xx-large;
+}
+
+ul+ol{
+  margin: 50px;
+}
+
+form~p{
+  font-family:fantasy;
+}
+
+#pic{
+  position: sticky;
+  top: 80px;
+}
+
+#boxmodel{
+background-color: aquamarine;
+width: 150;
+border: 15px solid black;
+padding: 25px;
+margin: 35px 15px; 
+}
